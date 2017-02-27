@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ParseHtmlDemo01";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    img {
+        max-width: 1130px;
+    }
+</style>
+
+
+@*<div style="max-width:1137px;">
+        @Html.Raw(ViewBag.cpost)
+    </div>*@
+
+<div>
+    <h4>博客园首页精华文章</h4>
+    @foreach (var item in ViewBag.allarticle)
+    {
+        <p>
+            @Html.Raw(item)
+        </p>
+    }
+</div>
